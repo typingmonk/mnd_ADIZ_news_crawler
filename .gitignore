@@ -1,0 +1,5 @@
+# venv
+venv/
+
+# executable code
+__pycache__/
