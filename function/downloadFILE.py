@@ -4,14 +4,14 @@ import bs4 as bs
 from urllib.parse import quote, unquote
 
 current_path = Path(__file__).parent.absolute()
-root_path = str(current_path.parent.parent)
-img_dir = root_path + "/archive/img/"
-pdf_dir = root_path + "/archive/pdf/"
+root_path = str(current_path.parent)
+img_dir = root_path + "/img/"
+pdf_dir = root_path + "/pdf/"
 mnd_prefix = "https://www.mnd.gov.tw/NewUpload"
 
 def downloadFILE(pid):
 	file_idx = 0
-	html_file_location = root_path + "/archive/html/" + str(pid) + ".html"
+	html_file_location = root_path + "/html/" + str(pid) + ".html"
 	with open(html_file_location, "r") as f:
 		html_doc = f.read()
 		soup = bs.BeautifulSoup(html_doc, 'html.parser')

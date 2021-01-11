@@ -21,7 +21,7 @@ def requestPage(pid):
 def getHTML(soup,pid):
 	print(str(__file__))
 	current_path = Path(__file__).parent.absolute()
-	save_location = str(current_path.parent.parent) + "/archive/html/" + str(pid) + ".html"
+	save_location = str(current_path.parent) + "/html/" + str(pid) + ".html"
 	thisPages = soup.find_all("div", class_="thisPages")
 	thisPages_str = str(thisPages[0])
 	with open(save_location, 'w') as file:

@@ -2,9 +2,9 @@ from pathlib import Path
 from pdf2image import convert_from_path
 
 current_path = Path(__file__).parent.absolute()
-root_path = str(current_path.parent.parent)
-img_dir = root_path + "/archive/img/"
-pdf_dir = root_path + "/archive/pdf/"
+root_path = str(current_path.parent)
+img_dir = root_path + "/img/"
+pdf_dir = root_path + "/pdf/"
 
 def extractMap(pid, pdf_locations):
 	map_locations = list()
