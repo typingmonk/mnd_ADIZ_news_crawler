@@ -3,3 +3,11 @@ venv/
 
 # executable code
 __pycache__/
+
+# archive files
+img/
+html/
+pdf/
+
+# MacOS Desktop Services Store
+*/.DS_Store
