@@ -3,8 +3,16 @@ venv/
 
 # executable code
 __pycache__/
+*.pyc
 
 # archive files
 img/
 html/
 pdf/
+
+# config
+config.py
+
+# just for experiment
+lab/
+
