@@ -19,7 +19,6 @@ def requestPage(pid):
 # 1 : 是貼文、而且是跟軍機繞台有關的貼文
 # 2 : 是貼文但跟軍機繞台無關
 def getHTML(soup,pid):
-	print(str(__file__))
 	current_path = Path(__file__).parent.absolute()
 	save_location = str(current_path.parent) + "/html/" + str(pid) + ".html"
 	thisPages = soup.find_all("div", class_="thisPages")

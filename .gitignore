@@ -1,6 +1,9 @@
 # venv
 venv/
 
+# MacOS .DS_Store
+*/.DS_Store
+
 # executable code
 __pycache__/
 *.pyc
