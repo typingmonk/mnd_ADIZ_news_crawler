@@ -4,6 +4,9 @@ venv/
 # MacOS .DS_Store
 */.DS_Store
 
+#Vim
+*.swp
+
 # executable code
 __pycache__/
 *.pyc
