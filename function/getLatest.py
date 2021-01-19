@@ -8,11 +8,7 @@ import bs4 as bs
 def getLatest():
 	latest_DB_id , latest_DB_date = getDBLastestPost()
 	latest_date = getLastestDate()
-	if latest_date > latest_DB_date:
-		return (latest_DB_id + 1, latest_date)
-	else:
-		return None
-	
+	return latest_DB_id, latest_DB_date, latest_date
 
 def getLastestDate():
 	list_page_url = "https://www.mnd.gov.tw/PublishTable.aspx?Types=" + quote("即時軍事動態")

@@ -19,6 +19,9 @@ pdf/
 # config
 config.py
 
+# test crawler
+crawler_test.py
+
 # just for experiment
 lab/
 

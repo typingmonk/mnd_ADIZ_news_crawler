@@ -1,20 +1,17 @@
 from function.downloadHTML import downloadHTML
-from function.downloadFILE import downloadFILE
-from function.extractMap import extractMap
+from function.extractFlightRecords import save_TB_flight_records
 from function.getLatest import getLatest
-from config import access_key, secret_access_key
-from function.reachDB import getDBConnect
-# Test Case:
-# 77443 第一個開始提供英文資訊的報告
-# 77445 從這版開始,改了軍機架次的呈現方式
-# 77448
-# 77614
-#for pid in range(77523, 77915):
-#	print(pid , "result code: ", downloadHTML(pid))
+#from function.downloadFILE import downloadFILE
+#from function.extractMap import extractMap
 
-print(77599, "result code: ", downloadHTML(77599))
-
-#locations = downloadFILE(77871)
-#print(locations)
-#print(extractMap(77871, locations[1]))
-#print(getLatest())
+target_id, latest_DB_date, latest_date = getLatest()
+while latest_DB_date < latest_date:
+	target_id += 1
+	result = downloadHTML(target_id)
+	if result is not None:
+		latest_DB_date = result
+		save_TB_flight_records(target_id)
+		print(target_id, latest_DB_date)
+	else:
+		print(target_id, None)
+print("Done.")
