@@ -7,6 +7,6 @@ For more project detail see landing page: https://g0v.hackmd.io/@tmonk/Bkff8k5qv
 
 ## 相關專案、連結
 - [Project Landing Page](https://g0v.hackmd.io/@tmonk/Bkff8k5qv/)
-- [資料視覺化網站](https://github.com/felixshai/Taiwan_ADIZ_alerts)
-- [資料爬蟲](https://github.com/felixshai/mnd_ADIZ_news_crawler)
-- [工作進度 Trello](https://trello.com/b/mI77X8dl/cronjob-and-crawler)
+- [GitHub 資料視覺化網站](https://github.com/felixshai/Taiwan_ADIZ_alerts)
+- [Github 資料爬蟲](https://github.com/felixshai/mnd_ADIZ_news_crawler)
+- [Trello 工作進度](https://trello.com/b/mI77X8dl/cronjob-and-crawler)
