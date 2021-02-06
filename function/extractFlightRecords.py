@@ -18,9 +18,9 @@ def save_TB_flight_records(pid):
 
 	p_soup = soup.find_all("p")
 	for i, p in enumerate(p_soup):
-		if "二、" in p.text:
+		if "二、" in p.text or "(二)" in p.text:
 			s = i
-		elif "三、" in p.text:
+		elif "三、" in p.text or "(三)" in p.text:
 			e = i
 			break
 	p_soup = p_soup[s+1:e]
