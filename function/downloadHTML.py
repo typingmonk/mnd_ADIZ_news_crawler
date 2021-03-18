@@ -20,7 +20,7 @@ def getHTML(pid, soup):
 	thisPages = soup.find_all("div", class_="thisPages")[0]
 	thisPages_str = str(thisPages)
 
-	if ("軍機" in thisPages_str and "中共" in thisPages_str) or "西南空域" in thisPages_str:
+	if ("軍機" in thisPages_str and "中共" in thisPages_str) or "西南空域空情動態" in thisPages_str:
 		#store at local
 		#with open(save_location, 'w') as file:
 		#	file.write(thisPages_str)
