@@ -11,7 +11,7 @@ def getLatest():
 	return latest_DB_id, latest_DB_date, latest_date
 
 def getLastestDate():
-	list_page_url = "https://www.mnd.gov.tw/PublishTable.aspx?Types=" + quote("即時軍事動態")
+	list_page_url = "https://www.mnd.gov.tw/PublishTable.aspx?Types=" + quote("即時軍事動態") + "&title=" + quote("國防消息")
 	post_list_page = request.urlopen(list_page_url)
 	soup = bs.BeautifulSoup(post_list_page, "html.parser")
 	latest_date = soup.find("td", class_="w-10").text
